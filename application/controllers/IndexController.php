@@ -41,6 +41,11 @@ class IndexController extends Zend_Controller_Action
         print_r($params);
         echo "</pre>";
 
+
+        $form = new Application_Form_RegisterSaveForm();
+
+        $this->view->form = $form;
+
     }
 }
 

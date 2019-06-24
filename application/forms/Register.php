@@ -19,6 +19,7 @@ class Application_Form_Register extends Zend_Form
         $this->addElement('password', 'password');
         $this->addElement('submit', 'save');
 
+
     }
 }
 
