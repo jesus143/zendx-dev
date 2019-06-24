@@ -16,26 +16,30 @@ class IndexController extends Zend_Controller_Action
 
     public function detailsAction()
     {
-//        $params = $this->getAllParams();
-//
-//        echo "<pre>";
-//        print_r($params);
-//        echo "</pre>";
-//
-//        $this->view->assign([
-//            'name'=> 'Jesus',
-//            'surename' => 'Suarez'
-//        ]);
-//
-//        $this->_helper->json($params);
-
-
+        //        $params = $this->getAllParams();
+        //
+        //        echo "<pre>";
+        //        print_r($params);
+        //        echo "</pre>";
+        //
+        //        $this->view->assign([
+        //            'name'=> 'Jesus',
+        //            'surename' => 'Suarez'
+        //        ]);
+        //
+        //        $this->_helper->json($params);
         $form = new Application_Form_Register();
-        
-        
+
         $this->view->form = $form;
+    }
 
+    public function saveAction()
+    {
+        $params = $this->getAllParams();
 
+        echo "<pre>";
+        print_r($params);
+        echo "</pre>";
 
     }
 }
